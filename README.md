@@ -10,3 +10,7 @@ To develop buffer overflow exploit in linux.
 Address Space Layout Randomization is a defense feature to make buffer overflows more difficult, most of the Unix/Linux machine uses it by default.
 # To disable ASLR : 
 sudo sysctl -w kernel.randomize_va_space=0
+
+# Run the python file redirect the output of that file into some other file.
+# Take this output as input of the c program:
+#  >> ./cfile $(cat out) or any other method if you have.
