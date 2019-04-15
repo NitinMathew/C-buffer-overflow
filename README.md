@@ -12,5 +12,7 @@ Address Space Layout Randomization is a defense feature to make buffer overflows
 sudo sysctl -w kernel.randomize_va_space=0
 
 # Run the python file redirect the output of that file into some other file.
+# Execute the program with this command this will disable the stack protection.
+# >> gcc -m32 -ggdb -g -z execstack -no-pie -fno-stack-protector -o out filename.c
 # Take this output as input of the c program:
 #  >> ./cfile $(cat out) or any other method if you have.
